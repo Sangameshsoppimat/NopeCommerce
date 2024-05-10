@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="JenkinsGitHubframeWork.JenkinsGitHubframeWork.AppTest"/>
+      <class name="orangeHrm.com.Products"/>
+      <class name="orangeHrm.com.Login"/>
+      <class name="utilsPackage.Baseclass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
