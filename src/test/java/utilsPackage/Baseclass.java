@@ -18,7 +18,7 @@ public class Baseclass
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	
 		

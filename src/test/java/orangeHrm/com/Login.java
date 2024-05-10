@@ -15,10 +15,12 @@ public class Login extends Baseclass
 	{
 		
 		LoginPage lp=new LoginPage(driver);
-		lp.enterUname("Admin");
-		lp.enterPassword("admin123");
+		lp.enterUname("admin@yourstore.com");
+		lp.enterPassword("admin");
 		lp.clickLoginbutton();
 	}
+	
+	
 	
 	
 
