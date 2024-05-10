@@ -25,10 +25,12 @@ public class LoginPage
 	
 	public void enterUname(String uname)
 	{
+		email.clear();
 		email.sendKeys(uname);
 	}
 	public void enterPassword(String password)
 	{
+		pass.clear();
 		pass.sendKeys(password);
 	}
 	public void clickLoginbutton()
