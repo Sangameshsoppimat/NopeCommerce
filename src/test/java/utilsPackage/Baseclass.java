@@ -4,15 +4,15 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Baseclass 
 {
 	public WebDriver driver;
-	@BeforeTest
+	@BeforeClass
 	public void setUp()
 	{
 		WebDriverManager.chromedriver().setup();
@@ -24,7 +24,7 @@ public class Baseclass
 		
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void teardown()
 	{
 		driver.close();
