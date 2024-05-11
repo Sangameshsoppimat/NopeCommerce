@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 11 08:12:09 IST 2024</td>
+<td>Started on:</td><td>Sat May 11 08:33:02 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15805 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30500 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,21 +76,62 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='orangeHrm.com.Login.loginOrange()'><b>loginOrange</b><br>Test class: orangeHrm.com.Login</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.clear(Unknown Source)
-	at OrangeHrmPages.LoginPage.enterUname(LoginPage.java:28)
-	at orangeHrm.com.Login.loginOrange(Login.java:18)
+<td title='orangeHrm.com.Products.productPage()'><b>productPage</b><br>Test class: orangeHrm.com.Products</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b68a79f5a69b39a6b56cbb727ad98736, clickElement {id=f.E208419A8BC9F383F213CCF77D2C58BE.d.6EE6B4DDB4C599C2442260ADC677DECD.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64891/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b68a79f5a69b39a6b56cbb727ad98736)] -&gt; xpath: //a[@href=&apos;/Admin/Product/List&apos;]]
+Session ID: b68a79f5a69b39a6b56cbb727ad98736
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at OrangeHrmPages.CatalogPage.clickOnproducts(CatalogPage.java:29)
+	at orangeHrm.com.Products.productPage(Products.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1334528976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1334528976'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.clear(Unknown Source)
-	at OrangeHrmPages.LoginPage.enterUname(LoginPage.java:28)
-	at orangeHrm.com.Login.loginOrange(Login.java:18)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1557534595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1557534595'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b68a79f5a69b39a6b56cbb727ad98736, clickElement {id=f.E208419A8BC9F383F213CCF77D2C58BE.d.6EE6B4DDB4C599C2442260ADC677DECD.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64891/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b68a79f5a69b39a6b56cbb727ad98736)] -&gt; xpath: //a[@href=&apos;/Admin/Product/List&apos;]]
+Session ID: b68a79f5a69b39a6b56cbb727ad98736
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at OrangeHrmPages.CatalogPage.clickOnproducts(CatalogPage.java:29)
+	at orangeHrm.com.Products.productPage(Products.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,8 +161,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>orangeHrm.com.Login@68c9133c</td></tr>
+<td>17</td>
+<td>orangeHrm.com.Products@173ed316</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -132,10 +173,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='orangeHrm.com.Products.productPage()'><b>productPage</b><br>Test class: orangeHrm.com.Products</td>
+<td title='orangeHrm.com.Login.loginOrange()'><b>loginOrange</b><br>Test class: orangeHrm.com.Login</td>
 <td></td>
-<td>11</td>
-<td>orangeHrm.com.Products@72035809</td></tr>
+<td>6</td>
+<td>orangeHrm.com.Login@7a35b0f5</td></tr>
 </table><p>
 </body>
 </html>
