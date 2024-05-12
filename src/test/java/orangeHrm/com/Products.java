@@ -29,23 +29,16 @@ public class Products extends Baseclass
 		pd.selectvendor();
 		pd.clciksearch();
 		productNameAssertion();
+		pd.clickOnaddProduct();
 		
 		
 	}
 
-	private void loginOrange() {
-		LoginPage lp=new LoginPage(driver);
-		
-		lp.enterUname("admin@yourstore.com");
-		lp.enterPassword("admin");
-		lp.clickLoginbutton();
-		
-	}
+	
 	
 	private void productNameAssertion()
 	{
 		ProductsPage pd=new ProductsPage(driver);
-		
 		String actual = pd.getproductName();
 		String expected = "Build your own computer";
 		Assert.assertEquals(actual, expected);

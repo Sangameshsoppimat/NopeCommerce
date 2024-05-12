@@ -43,9 +43,13 @@ public class ProductsPage
 	@FindBy(xpath="//tbody/tr/td[3]")
 	private WebElement productName;
 	
+	@FindBy(xpath="//a[@href='/Admin/Product/Create']")
+	WebElement addProduct;
+	
 	public void searchprodctName(String product)
 	{
 		prodctName.sendKeys(product);
+	
 	}
 	
 	public void searchcatgorydrpdown()
@@ -80,5 +84,9 @@ public class ProductsPage
 	public String getproductName()
 	{
 		return productName.getText();
+	}
+	public void clickOnaddProduct()
+	{
+		addProduct.click();
 	}
 }

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,21 +106,17 @@
                         <a href="#" panel-name="suite-Suite" title="orangeHrm.com.Products" class="method navigator-link" hash-for-method="productPage">productPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="orangeHrm.com.Login" class="method navigator-link" hash-for-method="loginOrange">loginOrange</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="orangeHrm.com.Orders" class="method navigator-link" hash-for-method="searchOrders">searchOrders</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="orangeHrm.com.Contries" class="method navigator-link" hash-for-method="searchcontries">searchcontries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,6 +128,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">orangeHrm.com.Contries</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchcontries">
+                  </a> <!-- searchcontries -->
+                  <span class="method-name">searchcontries</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b5fbca9d748a339c2b3b08455947fb8, findElement {using=id, value=Email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59179}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59179/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b5fbca9d748a339c2b3b08455947fb8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.clear(Unknown Source)
+	at OrangeHrmPages.LoginPage.enterUname(LoginPage.java:28)
+	at utilsPackage.Baseclass.loginOrange(Baseclass.java:30)
+	at orangeHrm.com.Contries.searchcontries(Contries.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -148,10 +188,10 @@
 Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b68a79f5a69b39a6b56cbb727ad98736, clickElement {id=f.E208419A8BC9F383F213CCF77D2C58BE.d.6EE6B4DDB4C599C2442260ADC677DECD.e.81}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64891/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b68a79f5a69b39a6b56cbb727ad98736)] -&gt; xpath: //a[@href=&apos;/Admin/Product/List&apos;]]
-Session ID: b68a79f5a69b39a6b56cbb727ad98736
+Command: [d7700f3ffbba4201f7ab94678106db69, clickElement {id=f.19DC255740C026FDD92561249B33ECB8.d.D793CF090E3521C5C18D6272AF344984.e.96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59108}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59108/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d7700f3ffbba4201f7ab94678106db69)] -&gt; xpath: //a[@href=&apos;/Admin/Product/List&apos;]]
+Session ID: d7700f3ffbba4201f7ab94678106db69
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -172,21 +212,49 @@ Session ID: b68a79f5a69b39a6b56cbb727ad98736
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">orangeHrm.com.Login</span>
+              <img src="failed.png"/>
+              <span class="class-name">orangeHrm.com.Orders</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginOrange">
-                  </a> <!-- loginOrange -->
-                  <span class="method-name">loginOrange</span>
+                  <a name="searchOrders">
+                  </a> <!-- searchOrders -->
+                  <span class="method-name">searchOrders</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.119)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2edcbcd1384ebf9982439bc0426a046, findElement {using=xpath, value=//p[normalize-space()=&apos;Sales&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\sande\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59143}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59143/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2edcbcd1384ebf9982439bc0426a046
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at OrangeHrmPages.DashboardPage.clickOnSalesdropdown(DashboardPage.java:33)
+	at orangeHrm.com.Orders.searchOrders(Orders.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -200,7 +268,8 @@ Session ID: b68a79f5a69b39a6b56cbb727ad98736
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;orangeHrm.com.Products&quot;/&gt;
-      &lt;class name=&quot;orangeHrm.com.Login&quot;/&gt;
+      &lt;class name=&quot;orangeHrm.com.Orders&quot;/&gt;
+      &lt;class name=&quot;orangeHrm.com.Contries&quot;/&gt;
       &lt;class name=&quot;utilsPackage.Baseclass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -215,7 +284,7 @@ Session ID: b68a79f5a69b39a6b56cbb727ad98736
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,20 +310,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'productPage')
-data.setCell(0, 2, 'orangeHrm.com.Products')
-data.setCell(0, 3, 17914);
+data.setCell(0, 1, 'searchOrders')
+data.setCell(0, 2, 'orangeHrm.com.Orders')
+data.setCell(0, 3, 28237);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginOrange')
-data.setCell(1, 2, 'orangeHrm.com.Login')
-data.setCell(1, 3, 6882);
+data.setCell(1, 1, 'productPage')
+data.setCell(1, 2, 'orangeHrm.com.Products')
+data.setCell(1, 3, 19709);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'searchcontries')
+data.setCell(2, 2, 'orangeHrm.com.Contries')
+data.setCell(2, 3, 18);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -289,26 +362,49 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">productPage</span>
-                <span class="method-start">2889 ms</span>
+                <span class="method-start">6058 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20816 ms</span>
+                <span class="method-start">25783 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">orangeHrm.com.Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">orangeHrm.com.Orders</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21046 ms</span>
+                <span class="method-start">26009 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginOrange</span>
-                <span class="method-start">23371 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrders</span>
+                <span class="method-start">29554 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">teardown</span>
-                <span class="method-start">30255 ms</span>
+                <span class="method-start">57796 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">orangeHrm.com.Contries</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchcontries</span>
+                <span class="method-start">60188 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">60217 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

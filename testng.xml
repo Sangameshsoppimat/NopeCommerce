@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="orangeHrm.com.Products"/>
-     
+      <class name="orangeHrm.com.Orders"/>
+      <class name="orangeHrm.com.Contries"/>
       <class name="utilsPackage.Baseclass"/>
     </classes>
   </test> <!-- Test -->

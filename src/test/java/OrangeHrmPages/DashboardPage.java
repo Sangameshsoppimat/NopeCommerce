@@ -17,9 +17,25 @@ public class DashboardPage
 	@FindBy(xpath="//a[@href='/logout']")
 	 WebElement Logout;
 	
+	@FindBy(xpath="//p[normalize-space()='Sales']")
+	WebElement Salesdropdown;
+	
+	@FindBy(xpath="//p[normalize-space()='Configuration']")
+	WebElement congidropdown;
+	
 	public void clickOnLogout()
 	{
 		Logout.click();
+	}
+	
+	public void clickOnSalesdropdown()
+	{
+		Salesdropdown.click();
+	}
+	 
+	public void clickOncongiguration()
+	{
+		congidropdown.click();
 	}
 
 }
