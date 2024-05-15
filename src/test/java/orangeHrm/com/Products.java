@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import OrangeHrmPages.CatalogPage;
-import OrangeHrmPages.LoginPage;
 import OrangeHrmPages.ProductsPage;
 import utilsPackage.Baseclass;
 

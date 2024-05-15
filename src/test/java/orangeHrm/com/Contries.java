@@ -24,18 +24,28 @@ public class Contries extends Baseclass
 		
 		Thread.sleep(3000);
 		
-		String xpath = "//div[@class='dataTables_scroll']//tbody/tr[2]/td[count(//div[@class='dataTables_scroll']//thead/tr//th[text()='Name']//preceding-sibling::th)+1]";
+		check("United States");
+		
+	}
 	
+	public void check(String Cname)
+	{
+		String xpath = "//div[@class='dataTables_scroll']//tbody/tr[2]/td[count(//div[@class='dataTables_scroll']//thead/tr//th[text()='Name']//preceding-sibling::th)+1]";
+		
 		List<WebElement> r = driver.findElements(By.xpath(xpath));
 		
 		for(WebElement rs:r)
 		{
+			
 			String cont = rs.getText();
-			if(cont.equalsIgnoreCase("Afghanistan"))
+			if(cont.equalsIgnoreCase(Cname))
 			{
-				WebElement edit = driver.findElement(By.xpath("//div[@class='dataTables_scroll']//tbody//tr[2]//td[12]"));
-				edit.click();
+				WebElement code = driver.findElement(By.xpath("//td[text()='"+Cname+"']//following-sibling::td[4]"));
+				
+				
+				System.out.println(code.getText());
 			}
+			
 		}
 	}
 	

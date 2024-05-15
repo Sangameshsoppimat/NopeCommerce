@@ -14,7 +14,7 @@ public class CatalogPage
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="(//a[@class='nav-link active'])[1]")
+	@FindBy(xpath="//p[normalize-space()='Catalog']")
 	WebElement catlogdropdown;
 	
 	@FindBy(xpath="//a[@href='/Admin/Product/List']")

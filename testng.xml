@@ -6,7 +6,9 @@
       <class name="orangeHrm.com.Products"/>
       <class name="orangeHrm.com.Orders"/>
       <class name="orangeHrm.com.Contries"/>
+      <class name="orangeHrm.com.Edit"/>
       <class name="utilsPackage.Baseclass"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
